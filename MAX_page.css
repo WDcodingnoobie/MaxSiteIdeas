@@ -1,0 +1,100 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Set background color and font styles */
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  background-color: #F5F5F5;
+  color: #000;
+}
+
+/* Container styles */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+.header {
+  background-color: #F5F5F5;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33vh;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Calendar styles */
+.calendar {
+  background-color: #F5F5F5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  height: 33vh;
+  box-sizing: border-box;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #F5F5F5;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 33vh;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.sub-container {
+  width: 30%;
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+}
+
+.sub-container {
+  border: 3px solid lime;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .header,
+  .calendar,
+  .footer {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  .sub-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* Rearrange sub-containers on phone-screen-sized windows */
+  @media screen and (max-width: 480px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
